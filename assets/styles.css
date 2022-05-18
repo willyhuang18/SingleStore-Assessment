@@ -10,11 +10,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
+
 
   .Paper-root {
     color: rgba(0, 0, 0, 0.87);
@@ -41,6 +37,7 @@ body {
     position: relative;
     align-items: center;
   }
+  
   .bar-gutters {
     padding-left: 16px;
     padding-right: 16px;
@@ -79,13 +76,14 @@ body {
     font-size: 16px;
     line-height: 26px;
     text-align: center; 
-  }
-  .title-text{
-    width: 30%;
+    width: 23%;
     margin: auto;
   }
+  
   .middle-container {
-    margin: 100px 0;
+    width: 23%;
+    margin: auto;
+    padding-top: 50px;
   }
   .rounded {
     width: 150px;
@@ -95,17 +93,94 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     border-radius: 50%;
     border: none;
     text-decoration: none;
-    transition: background 0.2s;
+    transition: 0.2s;
   }
   
 
-  .span{
+  .color{
     font-size: 80px;
     color: transparent;
     background: linear-gradient(#AA00FF 0%, #00A3D7 100%);
     -webkit-background-clip: text;
+  }
+
+  .label{
+    float: left;
+    padding-left: 25px;
+  }
+
+  .email{
+    display: flex;
+    justify-content: center;
+  }
+  .text-title{
+    width:318px;
+    background: #F3F3F5;
+    border-radius: 4px;
+    padding: 5px;
+    border: none;
+
+
+  }
+
+  span{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  }
+
+  .container{
+    padding-top: 20px;
+  }
+  button{
+  font-family: 'Lato';
+  font-style: normal;
+  font-size: 16px;
+  background: #8800CC;
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  color: #ffffff;
+  padding: 15px 25px 15px 25px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  }
+
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+  .input-box{
+    margin-bottom: 15px;
+    float: left;
+    padding-left: 25px;
+  }
+   .input-box input{
+    height: 20px;
+    width:320px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+   .input-box input:focus,
+   .input-box input:valid{
+    border-color: #9b59b6;
   }
