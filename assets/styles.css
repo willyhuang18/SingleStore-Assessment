@@ -87,3 +87,10 @@ body {
   .middle-container {
     margin: 100px 0;
   }
+
+  .span{
+    font-size: 80px;
+    color: transparent;
+    background: linear-gradient(#AA00FF 0%, #00A3D7 100%);
+    -webkit-background-clip: text;
+  }
