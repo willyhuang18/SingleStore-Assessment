@@ -87,6 +87,21 @@ body {
   .middle-container {
     margin: 100px 0;
   }
+  .rounded {
+    width: 150px;
+    height: 150px;
+    background: #F9EDFF;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  
 
   .span{
     font-size: 80px;
