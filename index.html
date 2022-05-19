@@ -11,11 +11,11 @@
     <title>Book a Demo</title>
 </head>
 <body>
-    <header class="Paper-root AppBar-root Paper-elevation4">
+    <nav>
         <div class="bar bar-gutters">
         <img class="logo" src="https://www.singlestore.com/images/components/navbar/logo_main.svg" />
         </div>
-    </header>
+    </nav>
     <div class="top-container">
         <div class="rounded">
             <i class="fa-regular fa-calendar-days color" ></i>
@@ -36,7 +36,7 @@
             </div>
             <div class="custom-select">
                 <select name="size" id="size"  required >
-                    <option value="" > Select Size</option>
+                    <option value=""> Select Size</option>
                     <option value="1-10" >1-10</option>
                     <option value="11-50">11-50</option>
                     <option value="51-100">51-100</option>
@@ -45,9 +45,47 @@
                     <option value="10000+">10000+</option>
                 </select>
             </div>
+            <div class="container">
+                <div class="label">
+                    <span>What is the most important thing to you in a solution?</span>
+                </div>
+                <div class="form-control">
+                    <form action="">
+                        <label>
+                            <input type="radio" id="RTA" name="radio" />
+                            <span>Real-time Analytics</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="QRT" name="radio" checked/>
+                            <span>Query Response Time</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="HC" name="radio" checked/>
+                            <span>High Concurrency</span>
+                        </label><label>
+                            <input type="radio" id="FDI" name="radio" checked/>
+                            <span>Fast Data Ingest</span>
+                        </label><label>
+                            <input type="radio" id="scal" name="radio" checked/>
+                            <span>Scalability</span>
+                        </label><label>
+                            <input type="radio" id="DS" name="radio" checked/>
+                            <span>Document Storage</span>
+                        </label><label>
+                            <input type="radio" id="FTS" name="radio" checked/>
+                            <span>Full Text Search</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="Price" name="radio"/>
+                            <span>Price</span>
+                        </label>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div id="submit" class="container">
-            <button type="button"  class="btn"id="submit"><span>Continue to Schedule a Time</span> <i class="fa-solid fa-arrow-right"></i></button>
+
+        <div id="submit" >
+            <button type="button"  class="btn"id="submitbtn"><span>Continue to Schedule a Time</span> <i class="fa-solid fa-arrow-right"></i></button>
         </div>        
     </form>
     </body>

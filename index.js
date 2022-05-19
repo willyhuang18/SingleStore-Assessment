@@ -1,5 +1,4 @@
 document.querySelectorAll('.custom-select').forEach(setupSelector);
-
 function setupSelector(selector) {
   selector.addEventListener('change', e => {
     console.log('changed', e.target.value)
@@ -30,7 +29,6 @@ function setupSelector(selector) {
       });
 
       selector.appendChild(dropDown);
-
       // handle click out
       document.addEventListener('click', (e) => {
         if(!selector.contains(e.target)) {
@@ -40,3 +38,4 @@ function setupSelector(selector) {
     }
   });
 }
+ 
