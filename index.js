@@ -76,6 +76,9 @@ function selectOption(){
     let text = "";
     let size = document.getElementById('size').value;
     console.log(size);
+    let email = document.getElementById('email').value;
+    console.log(email);
+
 
     for (let i = 0; i < radio.length; i++) {
         if(radio[i].checked){
@@ -85,7 +88,7 @@ function selectOption(){
 
     if(text == "Price" || text == "Full Text Search" || text == "Document Storage" || size == "1-10"){
         window.location.href = "./unqualified.html";
-    }else if(text == "" || size ==""){
+    }else if(text == "" || size =="" || email == " "){
         window.alert("Please fill out the form!")
     }else{
         window.location.href = "./qualified.html";
