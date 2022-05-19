@@ -30,7 +30,12 @@
             </div>
             <div class="input-box">
                 <input type="email"  id="email"  placeholder="Enter your business email" required> 
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <small>Error message</small>
+            
             </div>
+            
             <div class="label">
                 <span>Business Size</span>
             </div>
@@ -50,44 +55,46 @@
                     <span>What is the most important thing to you in a solution?</span>
                 </div>
                 <div class="form-control">
-                    <form action="">
                         <label>
-                            <input type="radio" id="RTA" name="radio" />
+                            <input type="radio" ivalue="Real-time Analytics" name="radio" />
                             <span>Real-time Analytics</span>
                         </label>
                         <label>
-                            <input type="radio" id="QRT" name="radio" checked/>
+                            <input type="radio" value="uery Response Time" name="radio" />
                             <span>Query Response Time</span>
                         </label>
                         <label>
-                            <input type="radio" id="HC" name="radio" checked/>
+                            <input type="radio" value="High Concurrency" name="radio" />
                             <span>High Concurrency</span>
-                        </label><label>
-                            <input type="radio" id="FDI" name="radio" checked/>
+                        </label>
+                        <label>
+                            <input type="radio" value="Fast Data Ingest" name="radio" />
                             <span>Fast Data Ingest</span>
-                        </label><label>
-                            <input type="radio" id="scal" name="radio" checked/>
+                        </label>
+                        <label>
+                            <input type="radio" value="Scalability" name="radio" />
                             <span>Scalability</span>
                         </label><label>
-                            <input type="radio" id="DS" name="radio" checked/>
+                            <input type="radio" value="Document Storage" name="radio" />
                             <span>Document Storage</span>
-                        </label><label>
-                            <input type="radio" id="FTS" name="radio" checked/>
+                        </label>
+                        <label>
+                            <input type="radio" value="Full Text Search" name="radio"/>
                             <span>Full Text Search</span>
                         </label>
                         <label>
-                            <input type="radio" id="Price" name="radio"/>
+                            <input type="radio" value="Price" name="radio"/>
                             <span>Price</span>
                         </label>
-                    </form>
                 </div>
             </div>
         </div>
 
         <div id="submit" >
-            <button type="button"  class="btn"id="submitbtn"><span>Continue to Schedule a Time</span> <i class="fa-solid fa-arrow-right"></i></button>
+            <button type="button"  onclick="selectOption()" class="btn" id="submitBtn"><span>Continue to Schedule a Time</span> <i class="fa-solid fa-arrow-right"></i></button>
         </div>        
     </form>
     </body>
     <script src="index.js"></script>
+    
 </html>

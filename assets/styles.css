@@ -2,10 +2,9 @@ body {
     text-align: center;
     font-family: 'Lato', sans-serif;
     max-width:100%;
-    height:auto;
+    max-height: 100%;
     margin:0;
     padding:0;
-    overflow-x:hidden;
   }
 
   nav {
@@ -35,7 +34,7 @@ body {
 
   .top-container {
     position: relative;
-    padding-top: 100px;
+    padding-top: 50px;
   }
 
   h1{
@@ -87,12 +86,72 @@ body {
   .label{
     float: left;
     padding-left: 25px;
+  
+  }
+  .input-box{
+    margin-bottom: 15px;
+    float: left;
+    padding-left: 25px;
+    padding-top: 10px;
+    position: relative;
+  }
+   .input-box input{
+    border: 2px solid #f0f0f0;
+    height: 32px;
+    font-size: 16px;
+    border-radius: 5px;
+    width:400px;
+    background: #F3F3F5;
+    padding: 10px;
+    display: block;
+
   }
 
-  .email{
-    display: flex;
-    justify-content: center;
-  }
+  .input-box input:focus{
+    outline: 0;
+   border:2px solid #C550FF;
+ }
+
+
+.input-box.success input {
+	border-color: #2ecc71;
+}
+
+.input-box.error input {
+	border-color: #e74c3c;
+}
+
+.input-box i {
+	visibility: hidden;
+	position: absolute;
+	top: 30px;
+	right: 15px;
+}
+
+.input-box.success i.fa-circle-check {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.input-box.error i.fa-triangle-exclamation {
+	color: #e74c3c;
+	visibility: visible;
+  
+}
+
+.input-box small {
+	color: #e74c3c;
+	position: relative;
+	visibility: hidden;
+  float: left;
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+.input-box.error small {
+	visibility: visible;
+}
+
   .text-title{
     width:318px;
     background: #F3F3F5;
@@ -142,36 +201,10 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-  .input-box{
-    margin-bottom: 15px;
-    float: left;
-    padding-left: 25px;
-    padding-top: 10px;
-    width:fit-content;
-
-  }
-   .input-box input{
-    height: 32px;
-    outline: none;
-    font-size: 16px;
-    border-radius: 5px;
-    border-bottom-width: 2px;
-    transition: all 0.3s ease;
-    width:400px;
-    background: #F3F3F5;
-    border-radius: 4px;
-    padding: 5px;
-    margin: 5px;
-    border:none;
-  }
-   .input-box input:focus{
-    border:2px solid #C550FF;
-  }
-  
   .custom-select {
     position: relative;
     display: inline-block;
-    padding-left: 20px;
+    padding-left: 25px;
     padding-top: 10px;
 
   }
@@ -232,9 +265,6 @@ body {
     transition: 0.3s ease;
     
   }
-  option:checked{
-    color: black;
-  }
   
   .custom-select .selector-options li:hover {
     background: #F3F3F5;
@@ -290,8 +320,10 @@ input[type="radio"]:checked + span:before{
 }
 
 #submit{
-  padding-top: 30px;
+  padding-top: 20px;
+  position: relative;
 }
+
 @media screen and (max-width: 600px) {
   p,.middle-container{
     width: 85%;
